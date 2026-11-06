@@ -1,15 +1,29 @@
 # CodeAlpha App Development Projects
 
-This repository contains two complete, standalone browser apps built for the CodeAlpha app development tasks.
+Flutter and Dart source for three CodeAlpha app development tasks.
 
-## Flashcard Quiz App
+## Flutter app
 
-Open [`flashcard-quiz-app.html`](flashcard-quiz-app.html) in a modern browser. Create, edit, delete, and review cards. Your deck is saved in that browser's local storage.
+Open the `flutter-apps` folder in Android Studio or VS Code. It contains Android and web runners and three screens in one Flutter app:
 
-## Random Quote Generator
+- **Flashcards:** flip cards, navigate the deck, and add, edit, or delete study cards.
+- **Random quotes:** show a quote and author on launch; tap **New quote** for another.
+- **Fitness tracker:** log steps and workouts, review daily totals and a weekly workout chart, and delete entries.
 
-Open [`random-quote-generator.html`](random-quote-generator.html) in a modern browser. A quote appears on launch; choose **New quote** for another one or **Copy quote** to copy the current quote.
+The flashcard deck and fitness records use local device storage through `shared_preferences`.
 
-## Run locally
+```sh
+cd flutter-apps
+flutter pub get
+flutter run
+```
 
-No install or build step is required. Open either HTML file directly, or serve this repository with any static file server. The apps use built-in HTML, CSS, and JavaScript. Sample flashcards and the quote collection are bundled in the source.
+## Browser versions
+
+The original standalone prototypes are also available in the repository root:
+
+- `flashcard-quiz-app.html`
+- `random-quote-generator.html`
+- `fitness-tracker-app.html`
+
+A ZIP archive containing the complete Flutter source is available as `codealpha_flutter_source.zip`.
